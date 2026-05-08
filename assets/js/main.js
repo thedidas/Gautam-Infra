@@ -11,14 +11,47 @@
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down
-   */
+   
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
     if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
     window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
   }
+*/
+/**
+   * added code begins
+   */
+function toggleScrolled() {
+  const selectBody = document.querySelector('body');
+  const selectHeader = document.querySelector('#header');
+  const topHero = document.querySelector('#top-hero');
 
+  if (
+    !selectHeader.classList.contains('scroll-up-sticky') &&
+    !selectHeader.classList.contains('sticky-top') &&
+    !selectHeader.classList.contains('fixed-top')
+  ) return;
+
+  // Existing scroll behavior
+  window.scrollY > 100
+    ? selectBody.classList.add('scrolled')
+    : selectBody.classList.remove('scrolled');
+
+  // Transparent navbar ONLY in hero section
+  if (topHero) {
+    const triggerPoint = topHero.offsetHeight - 100;
+
+    if (window.scrollY < triggerPoint) {
+      selectHeader.classList.add('transparent-header');
+    } else {
+      selectHeader.classList.remove('transparent-header');
+    }
+  }
+}
+/**
+   * added code ends
+   */
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
 
