@@ -295,6 +295,9 @@ h6 {
 .scrolled .header:not(.transparent-header) .navmenu .active:focus {
   color: #005180 !important;
 }
+.scrolled .header:not(.transparent-header) {
+  border-bottom: 3px solid #005180; 
+}
 }
 
 /* Navmenu - Mobile */
