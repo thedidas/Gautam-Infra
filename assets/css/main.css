@@ -3792,28 +3792,31 @@ section,
 
 .top-hero-content {
   padding: 140px 0 120px;
-  max-width: 850px;
+  max-width: 1950px;
   margin: auto;
 }
 
 .top-hero-content h1 {
   color: #fff;
-  font-size: 58px;
+  font-size: 45px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 30px;
 }
 
-.top-hero-content p {
+.top-hero-content .sub-heading {
   color: rgba(255,255,255,0.9);
-  font-size: 22px;
+  font-size: 38px;
+  font-weight: 500;
   line-height: 1.7;
   margin-bottom: 10px;
 }
 
-.top-hero-content .sub-text {
+.top-hero-content .tagline {
+  color: rgba(255,255,255,0.9);
+ 
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 /* Buttons */
@@ -3899,5 +3902,14 @@ background: #143556;
   .top-hero-logo h1 {
     font-size: 30px;
   }
+
+  .gautam-title {
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 30px;
+  max-width: 100%;
+}
 
 }
