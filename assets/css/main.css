@@ -443,6 +443,9 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
+.sitename {
+  font-size: 18px;
+}
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
