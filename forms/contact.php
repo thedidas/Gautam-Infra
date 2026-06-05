@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->setFrom($SMTP_USER, 'Website Contact Form');
 
-        $mail->addAddress('das.dishamani.work@gmail.com');
+        $mail->addAddress('marketing2@apel.co.in');
 
         $mail->isHTML(true);
 
