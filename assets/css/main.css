@@ -313,6 +313,7 @@ h6 {
 }
 }
 
+
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
@@ -2865,6 +2866,14 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
+.g-recaptcha {
+  display: inline-block;
+}
+
+.col-12.text-center .g-recaptcha {
+  margin: 0 auto 20px auto;
+}
 .contact .info-box {
   background-color: var(--accent-color);
   color: var(--contrast-color);
