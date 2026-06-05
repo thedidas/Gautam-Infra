@@ -25,6 +25,8 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <!-- =======================================================
   * Template Name: eBusiness
   * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
@@ -416,13 +418,26 @@ reliable Mast Climbing Work Platform solutions tailored to your project needs.</
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                    <button type="submit" class="btn">Send Message</button>
-                    
-                  </div>
+  <div class="loading">Loading</div>
+
+  <div class="error-message"></div>
+
+  <div class="sent-message">
+    Your message has been sent. Thank you!
+  </div>
+
+  <div class="g-recaptcha"
+       data-sitekey="6Lc2BQ4tAAAAAGJ1u2Ue0QV8EpYYi52eLQJ1Fqf-">
+  </div>
+
+  <br>
+
+  <button type="submit" class="btn">
+    Send Message
+  </button>
+
+</div>
 
                 </div>
               </form>
