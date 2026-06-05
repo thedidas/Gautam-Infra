@@ -449,8 +449,9 @@ h6 {
 
 .footer-logo {
     padding-top: 20px;
-    width: 140px;  
+    width: 160px;  
     height: auto;
+    margin-left: 50px;
 }
 
 
