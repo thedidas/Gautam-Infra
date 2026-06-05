@@ -1,7 +1,8 @@
 <?php
-
+require '../config.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
 
 require '../phpmailer/src/Exception.php';
 require '../phpmailer/src/PHPMailer.php';
@@ -23,13 +24,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'SMTP_USERNAME_HERE';
-        $mail->Password = 'SMTP_PASSWORD_HERE';
+        $mail->Username = $SMTP_USER;
+        $mail->Password = $SMTP_PASS;
 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('yourgmail@gmail.com', 'Website Contact Form');
+        $mail->setFrom($SMTP_USER, 'Website Contact Form');
 
         $mail->addAddress('das.dishamani.work@gmail.com');
 
