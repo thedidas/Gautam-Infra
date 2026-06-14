@@ -3964,69 +3964,20 @@ background: #ffb116;
   color: #f5c400;
 }
 
-/* Existing images */
-.image-wrapper {
-  position: relative;
-}
 
-.images {
-  position: relative;
-}
-
-.main-image {
-  width: 100%;
-  max-width: 500px;
-}
-
-.small-image {
-  position: absolute;
-  width: 45%;
-  bottom: -30px;
-  left: -40px;
-  border: 5px solid #fff;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-}
-
-/* Third image */
-.third-image {
-  position: absolute;
-  width: 40%;
-  top: -30px;
-  right: -30px;
-  border: 5px solid #fff;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-}
-
-@media (max-width: 991px) {
-
-  .small-image,
-  .third-image {
-    width: 35%;
-  }
-
-  .small-image {
-    left: 10px;
-    bottom: -20px;
-  }
-
-  .third-image {
-    right: 10px;
-    top: -20px;
-  }
-}
 
 .image-row {
     display: flex;
     justify-content: center; /* centers the row */
     align-items: center;
-    gap: 24px;
+    gap: 2px;
 }
 
 .image-row img {
-    height: 290px;      /* all images same height */
+    height: 100px;      /* all images same height */
     width: auto;        /* width determined by image aspect ratio */
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 0px;
 }
 .image-row {
     display: flex;
@@ -4042,7 +3993,7 @@ background: #ffb116;
 }
 
 .image-card img {
-    height: 320px;
+    height: 260px;
     width: auto;
     object-fit: cover;
     border-radius: 20px;
