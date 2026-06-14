@@ -1102,6 +1102,22 @@ section,
   border: 8px solid var(--surface-color);
 }
 
+.about .image-wrapper .product-image {
+  position: absolute;
+  bottom: -100px;
+  right: 0px;
+
+  width: 320px;
+  max-width: 40%;
+  
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  border: 4px solid var(--heading-color);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+  z-index: 10;
+}
 @media (max-width: 992px) {
   .about .image-wrapper .small-image {
     position: static;
@@ -1114,7 +1130,7 @@ section,
 .about .image-wrapper .experience-badge {
   position: absolute;
   bottom: 5%;
-  right: 5%;
+  right: 23%;
   background-color: var(--accent-color);
   color: var(--contrast-color);
   padding: 1.5rem;
@@ -1135,14 +1151,14 @@ section,
 .about .image-wrapper .experience-badge h3 {
   color: var(--contrast-color);
   font-size: 2.5rem;
-  margin: 0;
+  margin: 20;
   line-height: 0.5;
 }
 
 .about .image-wrapper .experience-badge h3 span {
   font-size: 1rem;
   display: inline-block;
-  margin-left: 0.25rem;
+  margin-left: 3rem;
 }
 
 .about .image-wrapper .experience-badge p {
@@ -1175,7 +1191,7 @@ section,
   color: var(--heading-color);
   font-family: var(--heading-font);
   font-size: 2.25rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -1302,18 +1318,7 @@ section,
   }
 }
 
-.stats .bi-star-fill,
-.stats .bi-star-half {
-  color: #ffae00;
-  font-size: 1.18em;
-  vertical-align: -0.13em;
-  margin-right: 2px;
-}
 
-.stats .bi-star-fill:last-child,
-.stats .bi-star-half:last-child {
-  margin-right: 0;
-}
 /*--------------------------------------------------------------
 # extra
 --------------------------------------------------------------*/
@@ -3008,7 +3013,14 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact .info-item .content {
+  text-align: left;
+}
 
+.contact .info-item .content h4,
+.contact .info-item .content p {
+  text-align: left;
+}
 .g-recaptcha {
   display: inline-block;
 }
@@ -3017,6 +3029,7 @@ section,
   margin: 0 auto 20px auto;
 }
 .contact .info-box {
+  
   background-color: var(--accent-color);
   color: var(--contrast-color);
   padding: 3rem;
@@ -3067,7 +3080,7 @@ section,
   background-color: color-mix(in srgb, var(--contrast-color), transparent 85%);
   border-radius: 50%;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-shrink: 0;
   transition: 0.3s;
