@@ -1511,13 +1511,20 @@ section,
 .contact .info-item .content p {
   text-align: left;
 }
-.g-recaptcha {
-  display: inline-block;
+
+.recaptcha-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.col-12.text-center .g-recaptcha {
-  margin: 0 auto 20px auto;
+@media (max-width: 480px) {
+  .g-recaptcha {
+    transform: scale(0.85);
+    transform-origin: center center;
+  }
 }
+
 .contact .info-box {
   
   background-color: var(--accent-color);
